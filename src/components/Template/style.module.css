@@ -1,0 +1,9 @@
+#backArrow {
+    width: 25px;
+}
+
+.link {
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+}

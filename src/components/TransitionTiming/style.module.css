@@ -1,0 +1,38 @@
+#ease {
+    transition-timing-function: ease;
+}
+
+#linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+    transform: translate(900px, 0);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}
+
+button {
+    background-color: brown;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    transition-duration: 2s;
+    transition-property: translate();
+}
