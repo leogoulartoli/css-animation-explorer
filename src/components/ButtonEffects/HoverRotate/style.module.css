@@ -1,0 +1,48 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #ff0000;
+  font-size: x-large;
+  font-weight: 700;
+  border: 5px solid #ff0000;
+  transition-duration: 2s;
+  transition-property: all;
+  position: relative;
+}
+.button:hover {
+  color: #fff
+}
+
+.button::before {
+  content: "";
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotateX(-0.25turn);
+  transition: transform 1s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.button::after {
+  content: "";
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: rotateY(-0.25turn);
+  transition: transform 1s;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.button:hover::after {
+  transform: rotate(0);
+}
+
+.button:hover::before {
+  transform: rotate(0);
+}

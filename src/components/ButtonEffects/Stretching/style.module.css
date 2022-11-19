@@ -1,0 +1,15 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #007932;
+  font-size: x-large;
+  font-weight: 400;
+  border: 2px solid #007932;
+  transition: all 0.5s;
+  position: relative;
+}
+.button:hover {
+  font-weight: 700;
+  border: 5px solid #007932;
+  letter-spacing: 10px;
+}
