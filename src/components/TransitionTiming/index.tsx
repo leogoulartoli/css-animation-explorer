@@ -1,29 +1,36 @@
+import { mapCssClasses } from "../../util";
 import styles from "./style.module.css";
 
 export const TransitionTiming = () => {
   return (
-    <div id={styles.container}>
-      <button id={`${styles.button} ${styles.ease}`} className={styles.move}>
+    <div className="flex flex-col gap-6">
+      <button
+        id={styles.ease}
+        className={mapCssClasses(styles.move, styles.button)}
+      >
         Ease
       </button>
-      <button id={`${styles.button} ${styles.linear}`} className={styles.move}>
+      <button
+        id={styles.linear}
+        className={mapCssClasses(styles.move, styles.button)}
+      >
         Linear
       </button>
       <button
-        id={`${styles.button} ${styles["ease-in"]}`}
-        className={styles.move}
+        id={styles.easeIn}
+        className={mapCssClasses(styles.move, styles.button)}
       >
         Ease In
       </button>
       <button
-        id={`${styles.button} ${styles["ease-out"]}`}
-        className={styles.move}
+        id={styles.easeOut}
+        className={mapCssClasses(styles.move, styles.button)}
       >
         Ease Out
       </button>
       <button
-        id={`${styles.button} ${styles["ease-in-out"]}`}
-        className={styles.move}
+        id={styles.easeInOut}
+        className={mapCssClasses(styles.move, styles.button)}
       >
         Ease In Out
       </button>

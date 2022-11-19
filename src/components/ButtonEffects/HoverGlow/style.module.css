@@ -1,0 +1,31 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 400;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: orange;
+}
+
+.button::before {
+  content: "";
+  background-color: white;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 50%;
+  transform: rotate(45deg) translate(0, 380%);
+  position: absolute;
+  transition: all 0.5s;
+}
+
+.button:hover::before {
+  transform: rotate(45deg) translate(0, -380%);
+}
