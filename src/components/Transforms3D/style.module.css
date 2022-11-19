@@ -1,0 +1,27 @@
+.move:hover {
+  transform: translateZ(300px);
+}
+
+.rotate:hover {
+  transform: rotateX(120deg);
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  perspective: 500px;
+}
+
+.button {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  transition-duration: 2s;
+  transition-property: all;
+}

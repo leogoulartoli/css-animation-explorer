@@ -9,6 +9,12 @@ export const Home = () => {
       <li>
         <Link to={"/effects/tranforms-2D"}>2D Transforms</Link>
       </li>
+      <li>
+        <Link to={"/effects/tranforms-3D"}>3D Transforms</Link>
+      </li>
+      <li>
+        <Link to={"/effects/button-effects"}>Button Effects</Link>
+      </li>
     </ul>
   );
 };
