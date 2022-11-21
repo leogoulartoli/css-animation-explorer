@@ -1,0 +1,51 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #272727;
+  font-size: x-large;
+  font-weight: 700;
+  background-color: #d400ff;
+  border: 5px solid #272727;
+  transition-duration: 0.5s;
+  transition-property: all;
+  position: relative;
+}
+
+.button::before {
+  content: "Switch";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fbff00;
+  transition: all 0.5s;
+}
+
+.button:hover::before {
+  transform: scale(0);
+  left:100%
+}
+
+.button::after {
+  content: "Switch";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background-color: #fbff00;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+
+.button:hover::after {
+  transform: scale(1);
+  left:0
+}

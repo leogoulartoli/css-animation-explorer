@@ -1,0 +1,51 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #272727;
+  font-size: x-large;
+  font-weight: 700;
+  background-color: #00ff88;
+  transition-duration: 0.5s;
+  transition-property: all;
+  position: relative;
+}
+
+.button::before {
+  content: "Calendar";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fbff00;
+  transform: rotateX(-270deg);
+  transform-origin: top;
+  transition: all 0.8s;
+}
+
+.button:hover::before {
+  transform: rotateX(0deg);
+}
+
+.button::after {
+  content: "Calendar";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #d400ff;
+  transform: rotateX(-270deg);
+  transform-origin: top;
+  transition: all 0.3s;
+}
+
+.button:hover::after {
+  transform: rotateX(0deg);
+}

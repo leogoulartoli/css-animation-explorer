@@ -7,6 +7,9 @@ import { HoverGlow } from "./HoverGlow";
 import { HoverMove } from "./HoverMove";
 import { HoverRotate } from "./HoverRotate";
 import { Stretching } from "./Stretching";
+import { HoverCircular } from "./HoverCircular";
+import { HoverCalendar } from "./HoverCalendar";
+import { HoverSwitch } from "./HoverSwitch";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -17,8 +20,9 @@ export const ButtonEffects = () => {
         className="w-20 h-20 cursor-pointer"
         onClick={() => setShowDarkEffects(false)}
       />
-      <div className="w-full flex justify-center items-center gap-7 px-72 py-7 bg-black">
+      <div className="w-full flex justify-center items-center gap-7 px-72 py-14 bg-black">
         <HoverGlow />
+        <HoverCalendar />
       </div>
     </>
   ) : (
@@ -27,13 +31,15 @@ export const ButtonEffects = () => {
         className="w-20 h-20 cursor-pointer"
         onClick={() => setShowDarkEffects(true)}
       />
-      <div className="w-full flex justify-center flex-wrap items-center gap-7 py-7 px-72">
+      <div className="w-full flex justify-center flex-wrap items-center gap-7 py-14 px-72">
         <HoverDegree />
         <HoverMove />
         <HoverRotate />
         <HoverDuplicate />
         <Stretching />
         <HoverOpacity />
+        <HoverCircular />
+        <HoverSwitch />
       </div>
     </>
   );
