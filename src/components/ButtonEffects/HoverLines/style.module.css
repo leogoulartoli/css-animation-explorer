@@ -1,0 +1,42 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: orange;
+  font-size: x-large;
+  font-weight: 700;
+  transition-duration: 0.5s;
+  transition-property: all;
+  position: relative;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: -7%;
+  left: 0;
+  height: 115%;
+  width: 100%;
+  border-left: 5px solid yellow;
+  border-right: 5px solid purple;
+  transition: all 1s;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 115%;
+  top: 0;
+  left: -7%;
+  border-top: 5px solid yellow;
+  border-bottom: 5px solid purple;
+  transition: all 1s;
+}
+
+.button:hover::before {
+  transform: rotateY(180deg);
+}
+
+.button:hover::after {
+  transform: rotateX(180deg);
+}

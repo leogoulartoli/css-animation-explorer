@@ -10,6 +10,10 @@ import { Stretching } from "./Stretching";
 import { HoverCircular } from "./HoverCircular";
 import { HoverCalendar } from "./HoverCalendar";
 import { HoverSwitch } from "./HoverSwitch";
+import { HoverDot } from "./HoverDot";
+import { HoverOpen } from "./HoverOpen";
+import { HoverPuzzle } from "./HoverPuzzle";
+import { HoverLines } from "./HoverLines";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -20,9 +24,11 @@ export const ButtonEffects = () => {
         className="w-20 h-20 cursor-pointer"
         onClick={() => setShowDarkEffects(false)}
       />
-      <div className="w-full flex justify-center items-center gap-7 px-72 py-14 bg-black">
+      <div className="w-full flex justify-center items-center gap-7 px-72 py-14 z-0 bg-black">
         <HoverGlow />
         <HoverCalendar />
+        <HoverPuzzle />
+        <HoverLines />
       </div>
     </>
   ) : (
@@ -38,8 +44,10 @@ export const ButtonEffects = () => {
         <HoverDuplicate />
         <Stretching />
         <HoverOpacity />
+        <HoverOpen />
         <HoverCircular />
         <HoverSwitch />
+        <HoverDot />
       </div>
     </>
   );
