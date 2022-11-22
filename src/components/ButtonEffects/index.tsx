@@ -14,6 +14,7 @@ import { HoverDot } from "./HoverDot";
 import { HoverOpen } from "./HoverOpen";
 import { HoverPuzzle } from "./HoverPuzzle";
 import { HoverLines } from "./HoverLines";
+import { HoverBorderExpansion } from "./HoverBorderExpansion";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -24,11 +25,12 @@ export const ButtonEffects = () => {
         className="w-20 h-20 cursor-pointer"
         onClick={() => setShowDarkEffects(false)}
       />
-      <div className="w-full flex justify-center items-center gap-7 px-72 py-14 z-0 bg-black">
+      <div className="w-full flex justify-center flex-wrap items-center gap-7 px-72 py-14 z-0 bg-[#2f2f2f]">
         <HoverGlow />
         <HoverCalendar />
         <HoverPuzzle />
         <HoverLines />
+        <HoverBorderExpansion />
       </div>
     </>
   ) : (
