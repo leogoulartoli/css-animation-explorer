@@ -15,6 +15,8 @@ import { HoverOpen } from "./HoverOpen";
 import { HoverPuzzle } from "./HoverPuzzle";
 import { HoverLines } from "./HoverLines";
 import { HoverBorderExpansion } from "./HoverBorderExpansion";
+import { HoverBigger } from "./HoverBigger";
+import { HoverFullBorder } from "./HoverFullBorder";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -30,6 +32,7 @@ export const ButtonEffects = () => {
         <HoverCalendar />
         <HoverPuzzle />
         <HoverLines />
+        <HoverFullBorder />
         <HoverBorderExpansion />
       </div>
     </>
@@ -50,6 +53,7 @@ export const ButtonEffects = () => {
         <HoverCircular />
         <HoverSwitch />
         <HoverDot />
+        <HoverBigger />
       </div>
     </>
   );
