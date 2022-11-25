@@ -17,6 +17,7 @@ import { HoverLines } from "./HoverLines";
 import { HoverBorderExpansion } from "./HoverBorderExpansion";
 import { HoverBigger } from "./HoverBigger";
 import { HoverFullBorder } from "./HoverFullBorder";
+import { HoverWave } from "./HoverWave";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -34,6 +35,7 @@ export const ButtonEffects = () => {
         <HoverLines />
         <HoverFullBorder />
         <HoverBorderExpansion />
+        <HoverWave />
       </div>
     </>
   ) : (
