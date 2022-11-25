@@ -1,7 +1,5 @@
 The intent of this repo is to give you a bunch of animations and possible insights for CSS animations. After running this project you'll be able to see a list with many animation. Some of the animations are taught in the [CSS course on Udemy](https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/)
 
-Credits: https://www.udemy.com/course/css-animation-transitions-and-transforms-creativity-course/
-
 # Getting Started
 
 First of all, make sure you're using node version 18+, then you can run:
