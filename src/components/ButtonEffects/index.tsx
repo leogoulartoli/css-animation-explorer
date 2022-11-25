@@ -5,7 +5,7 @@ import { HoverDegree } from "./HoverDegree";
 import { HoverDuplicate } from "./HoverDuplicate";
 import { HoverGlow } from "./HoverGlow";
 import { HoverMove } from "./HoverMove";
-import { HoverRotate } from "./HoverRotate";
+import { HoverContainers } from "./HoverContainers";
 import { Stretching } from "./Stretching";
 import { HoverCircular } from "./HoverCircular";
 import { HoverCalendar } from "./HoverCalendar";
@@ -18,6 +18,7 @@ import { HoverBorderExpansion } from "./HoverBorderExpansion";
 import { HoverBigger } from "./HoverBigger";
 import { HoverFullBorder } from "./HoverFullBorder";
 import { HoverWave } from "./HoverWave";
+import { HoverCut } from "./HoverCut";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -47,7 +48,8 @@ export const ButtonEffects = () => {
       <div className="w-full flex justify-center flex-wrap items-center gap-7 py-14 px-72">
         <HoverDegree />
         <HoverMove />
-        <HoverRotate />
+        <HoverCut />
+        <HoverContainers />
         <HoverDuplicate />
         <Stretching />
         <HoverOpacity />
