@@ -1,0 +1,48 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 700;
+  transition-duration: 1s;
+  transition-property: all;
+  position: relative;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90%;
+  background-color: #950000;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.87, 0.14);
+  z-index: -1;
+  transform: skew(30deg);
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 90%;
+  top: 10%;
+  left: 50%;
+  background-color: #b4c100;
+  transition: all 0.5s cubic-bezier(0.17, 0.67, 0.87, 0.14);
+  z-index: -1;
+  transform: skew(30deg);
+}
+
+.button:hover::after {
+  top: 0;
+  left: 50%;
+  transform: skew(0);
+}
+
+.button:hover::before {
+  left: 0;
+  top: 0;
+  transform: skew(0);
+}

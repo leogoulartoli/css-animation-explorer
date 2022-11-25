@@ -19,6 +19,9 @@ import { HoverBigger } from "./HoverBigger";
 import { HoverFullBorder } from "./HoverFullBorder";
 import { HoverWave } from "./HoverWave";
 import { HoverCut } from "./HoverCut";
+import { HoverTwoButtons } from "./HoverTwoButtons";
+import { HoverPulse } from "./HoverPulse";
+import { HoverDiamond } from "./HoverDiamond";
 
 export const ButtonEffects = () => {
   const [showDarkEffects, setShowDarkEffects] = useState(false);
@@ -45,7 +48,7 @@ export const ButtonEffects = () => {
         className="w-20 h-20 cursor-pointer"
         onClick={() => setShowDarkEffects(true)}
       />
-      <div className="w-full flex justify-center flex-wrap items-center gap-7 py-14 px-72">
+      <div className="w-full flex justify-center flex-wrap items-center gap-8 py-14 px-72">
         <HoverDegree />
         <HoverMove />
         <HoverCut />
@@ -53,11 +56,14 @@ export const ButtonEffects = () => {
         <HoverDuplicate />
         <Stretching />
         <HoverOpacity />
+        <HoverDiamond />
+        <HoverTwoButtons />
         <HoverOpen />
         <HoverCircular />
         <HoverSwitch />
         <HoverDot />
         <HoverBigger />
+        <HoverPulse />
       </div>
     </>
   );

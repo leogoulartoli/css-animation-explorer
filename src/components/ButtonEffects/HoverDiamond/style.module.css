@@ -1,0 +1,44 @@
+.button {
+  height: 100px;
+  width: 200px;
+  color: #b70089;
+  font-size: x-large;
+  font-weight: 700;
+  transition-duration: 0.5s;
+  transition-property: all;
+  position: relative;
+  border: 5px solid #b70089;
+  overflow: hidden;
+  z-index: 2;
+}
+.button:hover {
+  color: #fff;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  background-color: #b70089;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: calc(50% - 12.5px);
+  left: calc(50% - 12.5px);
+  width: 25px;
+  height: 25px;
+  transition: all 0.5s;
+  transform: rotate(45deg) scale(7);
+  z-index: -1;
+}
+
+.button:hover::before {
+  transform: rotate(45deg) scale(0);
+}
