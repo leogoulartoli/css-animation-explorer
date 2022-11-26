@@ -1,0 +1,39 @@
+.container {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container > img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s all;
+}
+
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  transition: 0.5s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-100%);
+}
+
+.caption > h3 {
+  font-size: xx-large;
+}
+.container:hover > img {
+  transform: translateX(100%);
+}
+
+.container:hover .caption {
+  transform: translateX(0%);
+}

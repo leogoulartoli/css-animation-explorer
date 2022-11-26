@@ -15,6 +15,9 @@ export const Home = () => {
       <li>
         <Link to={"/effects/button-effects"}>Button Effects</Link>
       </li>
+      <li>
+        <Link to={"/effects/image-effects"}>Image Effects</Link>
+      </li>
     </ul>
   );
 };
