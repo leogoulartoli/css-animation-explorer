@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+}
+
+.container > li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: xx-large;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.container > li:hover {
+  color: white;
+}
+
+.linkHeader::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 25%;
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.5s;
+  transform: translateY(-100%);
+  background-color: #272727;
+  z-index: -1;
+}
+
+.linkHeader::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.3s;
+  transform: translateY(-100%);
+  background-color: #272727;
+  z-index: -1;
+}
+
+.linkHeader > span::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 25%;
+  width: 25%;
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+  transform: translateY(-100%);
+  background-color: #272727;
+  z-index: -1;
+}
+
+.linkHeader > span::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 50%;
+  width: 25%;
+  height: 100%;
+  transition: all 0.5s;
+  transition-delay: 0.4s;
+  transform: translateY(-100%);
+  background-color: #272727;
+  z-index: -1;
+}
+
+.linkHeader:hover > span::before {
+  transform: translateY(0);
+}
+
+.linkHeader:hover > span::after {
+  transform: translateY(0);
+}
+
+.linkHeader:hover::after {
+  transform: translateY(0);
+}
+
+.linkHeader:hover::before {
+  transform: translateY(0);
+}

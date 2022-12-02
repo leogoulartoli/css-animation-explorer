@@ -5,6 +5,7 @@ import {
   Transforms2D,
   Transforms3D,
 } from "./components";
+import { HeaderEffects } from "./components/HeaderEffects";
 import { Home } from "./components/Home";
 import { Template } from "./components/Template";
 import { TransitionTiming } from "./components/TransitionTiming";
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/effects/image-effects",
         element: <ImageEffects />,
+      },
+      {
+        path: "/effects/header-effects",
+        element: <HeaderEffects />,
       },
     ],
   },

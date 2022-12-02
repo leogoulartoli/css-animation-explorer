@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+}
+
+.linkHeader {
+  position: relative;
+  cursor: pointer;
+  font-size: xx-large;
+  transition: all 0.5s;
+}
+
+.linkHeader:hover {
+  color: #fff;
+}
+
+.linkHeader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  background-color: #272727;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.linkHeader::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(5);
+  opacity: 0;
+  transition: all 0.5s;
+  border-bottom: 5px solid #272727;
+  border-top: 5px solid #272727;
+  z-index: -1;
+}
+
+.linkHeader:hover::before {
+  transform: scaleY(1.3);
+  opacity: 1;
+}
+
+.linkHeader:hover::after {
+  transform: scale(1);
+}

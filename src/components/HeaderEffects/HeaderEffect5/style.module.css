@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+}
+
+.container > li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: xx-large;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.container:hover > li {
+  filter: blur(2px);
+  opacity: 0.2;
+}
+
+.container > li:hover {
+  filter: blur(0);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.linkHeader:hover {
+  color: #fff;
+  background-color: brown;
+}

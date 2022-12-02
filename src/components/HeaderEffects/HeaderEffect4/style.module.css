@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 80%;
+}
+
+.container > li {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: xx-large;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.linkHeader::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50%;
+  height: 100%;
+  transition: all 0.5s;
+  transform: translateX(-110%);
+  border-bottom: 5px solid red;
+  z-index: -1;
+}
+
+.linkHeader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  transition: all 0.5s;
+  transform: translateX(110%);
+  border-bottom: 5px solid blue;
+  z-index: -1;
+}
+
+.linkHeader:hover::before {
+  transform: translateX(100%);
+}
+
+.linkHeader:hover::after {
+  transform: translateX(-100%);
+}
