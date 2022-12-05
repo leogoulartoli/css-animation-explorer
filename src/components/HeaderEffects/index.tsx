@@ -5,6 +5,7 @@ import { HeaderEffect4 } from "./HeaderEffect4";
 import { HeaderEffect5 } from "./HeaderEffect5";
 import { HeaderEffect6 } from "./HeaderEffect6";
 import { HeaderEffect7 } from "./HeaderEffect7";
+import { HeaderEffect8 } from "./HeaderEffect8";
 
 export const HeaderEffects = () => {
   return (
@@ -17,6 +18,7 @@ export const HeaderEffects = () => {
         <HeaderEffect5 />
         <HeaderEffect6 />
         <HeaderEffect7 />
+        <HeaderEffect8 />
       </div>
     </>
   );
