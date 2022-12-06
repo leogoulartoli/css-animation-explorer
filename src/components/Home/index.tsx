@@ -21,6 +21,9 @@ export const Home = () => {
       <li>
         <Link to={"/effects/header-effects"}>Header Effects</Link>
       </li>
+      <li>
+        <Link to={"/effects/card-effects"}>Card Effects</Link>
+      </li>
     </ul>
   );
 };

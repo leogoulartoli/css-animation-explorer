@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import {
   ButtonEffects,
+  CardEffects,
   ImageEffects,
   Transforms2D,
   Transforms3D,
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path: "/effects/header-effects",
         element: <HeaderEffects />,
+      },
+      {
+        path: "/effects/card-effects",
+        element: <CardEffects />,
       },
     ],
   },
