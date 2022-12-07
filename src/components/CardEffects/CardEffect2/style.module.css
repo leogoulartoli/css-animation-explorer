@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  padding: 20px 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 300px;
+  transition: all 0.5s;
+}
+
+.cardContent {
+  width: 100%;
+  z-index: 2;
+}
+
+.cardContent img {
+  position: absolute;
+  top: -10%;
+  left: 0;
+  width: 70%;
+  transform: translateX(20%);
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.cardTextContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  z-index: 2;
+  transition: all 0.5s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.card:hover {
+  height: 400px;
+}
+
+.card:hover .cardTextContent {
+  transform: translateY(140%);
+  opacity: 1;
+}

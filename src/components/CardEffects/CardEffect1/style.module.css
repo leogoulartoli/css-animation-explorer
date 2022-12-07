@@ -1,10 +1,43 @@
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 350px;
+  padding: 20px 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: purple;
+  transform: translateY(98%);
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.card:hover::before {
+  transform: translateY(0);
 }
 
 .cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 1rem;
+  transition: all 0.6s;
+  z-index: 2;
+}
+
+.card:hover .cardContent {
+  color: #fff;
 }
