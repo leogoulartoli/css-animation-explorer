@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  position: relative;
+  z-index: 1;
+  height: 300px;
+  transition: all 0.5s;
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgb(164, 28, 158);
+  z-index: 2;
+}
+
+.icon {
+  width: 50%;
+  height: 50%;
+  color: #fff;
+}
+
+.cardTextContent {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  color: black;
+  transition: all 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.card:hover .cardTextContent {
+  transform: translateY(200%);
+}
