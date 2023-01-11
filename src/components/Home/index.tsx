@@ -24,6 +24,11 @@ export const Home = () => {
       <li>
         <Link to={"/effects/card-effects"}>Card Effects</Link>
       </li>
+      <li>
+        <Link to={"/effects/extra-transform-effects"}>
+          Extra Transform Effects
+        </Link>
+      </li>
     </ul>
   );
 };

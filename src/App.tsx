@@ -6,6 +6,7 @@ import {
   Transforms2D,
   Transforms3D,
 } from "./components";
+import { ExtraTransformEffects } from "./components/ExtraTransformEffects";
 import { HeaderEffects } from "./components/HeaderEffects";
 import { Home } from "./components/Home";
 import { Template } from "./components/Template";
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       {
         path: "/effects/card-effects",
         element: <CardEffects />,
+      },
+      {
+        path: "/effects/extra-transform-effects",
+        element: <ExtraTransformEffects />,
       },
     ],
   },

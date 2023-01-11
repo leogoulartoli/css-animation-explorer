@@ -1,0 +1,28 @@
+.container {
+  display: inline-block;
+}
+
+.container h2 {
+  font-weight: 700;
+  text-align: center;
+  color: #808080;
+  font-size: 100px;
+  position: relative;
+}
+
+.container h2::before {
+  content: "FILL";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #2e2e2e;
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.container:hover h2::before {
+  width: 100%;
+}
