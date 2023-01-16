@@ -3,6 +3,7 @@ import {
   ButtonEffects,
   CardEffects,
   ImageEffects,
+  Keyframes,
   Transforms2D,
   Transforms3D,
 } from "./components";
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/effects/extra-transform-effects",
         element: <ExtraTransformEffects />,
+      },
+      {
+        path: "/effects/keyframes",
+        element: <Keyframes />,
       },
     ],
   },

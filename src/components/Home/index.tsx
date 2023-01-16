@@ -29,6 +29,9 @@ export const Home = () => {
           Extra Transform Effects
         </Link>
       </li>
+      <li>
+        <Link to={"/effects/keyframes"}>Keyframes</Link>
+      </li>
     </ul>
   );
 };

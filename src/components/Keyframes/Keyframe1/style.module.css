@@ -1,0 +1,25 @@
+.container {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: goldenrod;
+}
+
+.container > span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 15px 10px #00000050;
+  animation: rotating 1s ease-in-out infinite alternate;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
