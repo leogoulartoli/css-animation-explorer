@@ -1,0 +1,40 @@
+.container {
+  width: 45%;
+  min-width: 250px;
+  height: 200px;
+  background-color: rgb(32, 209, 218);
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 3rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  animation: naming 2s ease-in-out infinite;
+}
+
+@keyframes naming {
+  0% {
+    content: "Don't";
+  }
+  25% {
+    content: "Stop";
+  }
+  50% {
+    content: "Me";
+  }
+  75% {
+    content: "Now";
+  }
+  100% {
+    content: "";
+  }
+}

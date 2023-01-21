@@ -1,0 +1,57 @@
+.container {
+  width: 45%;
+  min-width: 250px;
+  height: 200px;
+  background-color: rgb(112, 1, 108);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border-bottom: 5px solid white;
+}
+
+.content span {
+  display: inline-block;
+  font-size: 100px;
+  animation: moveVertically 2s linear infinite;
+  color: white;
+}
+
+.container span:nth-child(1) {
+  animation-delay: 1.5s;
+}
+
+.container span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.container span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.container span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.container span:nth-child(5) {
+  animation-delay: 0s;
+}
+
+.container span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+@keyframes moveVertically {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(25%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

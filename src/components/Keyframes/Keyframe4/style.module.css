@@ -1,0 +1,52 @@
+.container {
+  width: 45%;
+  min-width: 250px;
+  height: 200px;
+  background-color: rgb(75, 75, 75);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 100px;
+  width: 200px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 400;
+  border: 2px solid #fff;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 200%;
+  transform: translate(0, 380%);
+  position: absolute;
+  transition: all 0.5s;
+  animation: button 1s linear infinite;
+  z-index: -1;
+}
+
+.button:hover::before {
+  width: 200%;
+  transform: translate(0, 0);
+  animation: none;
+}
+
+@keyframes button {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(600%, 0);
+  }
+}
